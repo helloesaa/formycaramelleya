@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For my gf</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Hey! let's login here</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+            <p id="error-message" class="error-message"></p>
+        </div>
+    </div>
+    
+    <div class="main-container">
+        <nav class="navbar">
+            <div class="brand">Kazell's</div>
+            <ul id="navLinks">
+                <li><a href="#" data-target="home">Home</a></li>
+                <li><a href="#" data-target="about">About</a></li>
+                <li><a href="#" data-target="playlist">Music</a></li>
+                <li><a href="#" data-target="contact">Something</a></li>
+            </ul>
+        </nav>
+    </div>
+        <section id="home" class="content active">
+            <h1>Hi beautiful, welcome!</h1>
+            <p>Here, everything about you will be etched forever. First of all, allow me to thank you for coloring my life in ways I could never imagine. You bring me boundless happiness, even with just the sound of your gentle voice. Every word you speak is like a beautiful melody that soothes the soul. You made me believe that in this world, there is something truly beautiful, and that beauty is you, Caramelleya.
+                Every smile of yours is a light that illuminates every corner of my heart, warming spaces that were once dark. Your gaze brings peace, erases all doubts, and makes me feel safe in this world. Every moment we spend together is an invaluable gift. In every second we share, I feel like the world stops for a moment, just to admire the beauty you bring.
+                You are the dream come true, Caramelleya, who taught me that true love exists, and I found it in you. With you, I experience a wonder I've never known before. You are the reason I believe that true happiness can be found in a sincere heart.
+                I want to always be there for you, just as you have always been there for me, walking through every twist and turn of life together, because I know there is nothing more beautiful than sharing life with you.</p>
+        
+            <section id="services" class="services">
+                <h2>What can I do for you?</h2>
+                <div class="service-container">
+                    <div class="service">
+                        <i class="fas fa-feather-alt service-icon"></i>
+                        <h3>Give You Love.</h3>
+                        <p>Allow me to weave words into a beautiful poem that captures the essence of our love.</p>
+                        <button onclick="openModal('poemModal')">Send Messages</button>
+                    </div>
+                    <div class="service">
+                        <i class="fas fa-calendar-heart service-icon"></i>
+                        <h3>Being all-rounder.</h3>
+                        <p>Being versatile, always there to support, listen, and meet your emotional needs, without hesitation.</p>
+                        <button onclick="openModal('dateModal')">Support You</button>
+                    </div>
+                    <div class="service">
+                        <i class="fas fa-music service-icon"></i>
+                        <h3>Be a Loyal Listener</h3>
+                        <p>I will listen to all your stories, give you my full attention, and support you like a partner who is always there for you</p>
+                        <button onclick="openModal('playlistModal')">Let’s Talk</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+ 
+        <section id="about" class="content">
+            <h1>This is about you.</h1>
+            <p>I have summarized a few things, and it might be incomplete or contain some mistake. Would you be willing to help me correct (any mistakes) and add anything that might have been overlooked?</p>
+
+            <div class="todo-container">
+                <ul id="todoList">
+                    <li>suka banget matcha</li>
+                    <li>punya boneka gajah namanya matcha</li>
+                    <li>suka gajahh</li>
+                    <li>hampir semua barangnya berwarna matcha</li>
+                    <li>punya asam lambung (gabisa soda sama sekali)</li>
+                    <li>gabisa denger benturan keras</li>
+                    <li>phobia ular</li>
+                    <li>punya alergi dingin</li>
+                    <li>lovlangnya cium</li>
+                    <li>suka bunga</li>
+                    <li>suka gajahh</li>
+                    <li>kalo tidur gaboleh nutupin kepala, nanti ketindihan</li>
+                    <li>kucing lya namanya simba</li>
+                    <li>suka salmon sashimi/sushi salmon, tapi gasuka tuna sashimi</li>
+                    <li>lagi suka warna pink (9 des, 2024)</li>
+                    <li>lagi suka pakai rok daripada celana (9 des, 2024)</li>
+                    <li>suka koleksi pita lucu</li>
+                    <li>koleksi baju bunga-bunga</li>
+                    <li>suka baca buku di taman</li>
+                    <li>suka beli bungan buat ditaruh di kamar</li>
+                    <li>suka bunga mawar merah, mawar putih, lily, tulip, dan sunflower</li>
+                    <li>matcha punya temen lagi namanya bimbim dan green</li>
+                </ul>
+            </div>
+        </section>
+        <section id="playlist" class="content">
+            <h1 class="playlist-title">Explore Your Mood Through Music</h1>
+        
+            <ul class="playlist-list">
+                <li class="playlist-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/happy.jpg" alt="Happy" class="playlist-image" loading="lazy">
+                    <div class="playlist-content">
+                        <h2 class="playlist-mood">Happy</h2>
+                        <p class="playlist-text">Celebrate life's joyful moments with this uplifting playlist.</p>
+                        <a href="https://open.spotify.com/playlist/1VXs2xjTxcgy5GoEb7pUvi?si=533165d33dfe40b6&pt=98c693399c51037d4356af56b30881ab" 
+                           target="_blank" class="playlist-button">
+                           <span>🎵 Play on Spotify</span>
+                        </a>
+                    </div>
+                </li>
+        
+                <li class="playlist-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/sad.jpg" alt="Sad" class="playlist-image" loading="lazy">
+                    <div class="playlist-content">
+                        <h2 class="playlist-mood">Sad</h2>
+                        <p class="playlist-text">Let this playlist accompany you through life's more contemplative moments.</p>
+                        <a href="https://open.spotify.com/playlist/5Pb1PLaU73jCRFvWEH2pTw?si=b51dca4080d24806&pt=9a5b8c475b1583e198e8bda13eab2d32" 
+                           target="_blank" class="playlist-button">
+                           <span>🎵 Play on Spotify</span>
+                        </a>
+                    </div>
+                </li>
+        
+                <li class="playlist-item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="assets/loveee.jpg" alt="Love" class="playlist-image" loading="lazy">
+                    <div class="playlist-content">
+                        <h2 class="playlist-mood">Love</h2>
+                        <p class="playlist-text">Dive into the depths of romance and connection with these heartfelt tunes.</p>
+                        <a href="https://open.spotify.com/playlist/4Epo9M7QLIna0zXLmHubXp?si=bb3eb6cdac3440cb&pt=d34f53f12900929f920648c24aa0d7da" 
+                           target="_blank" class="playlist-button">
+                           <span>🎵 Play on Spotify</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        
+        
+        <section id="contact" class="content">
+            <h1>Little bit apresiation for u</h1>
+            
+            <div class="container">
+                <div class="info-box">
+                    <p>A little bit of appreciation for you, because you light up my world in ways you don’t even realize.</p>
+                </div>
+                
+                <div class="info-box">
+                    <p>This is your little reminder that you’re amazing just the way you are.</p>
+                </div>
+                
+                <div class="info-box">
+                    <p>A tiny appreciation for the huge happiness you bring into my life every single day.</p>
+                </div>
+                
+                <div class="info-box">
+                    <p>You deserve all the love and care in the world. Here's a little bit to remind you.</p>
+                </div>
+
+                <div class="info-box">
+                    <p>A little thanks for your big heart. You’re the best thing that ever happened to me.</p>
+                </div>
+
+                <div class="info-box">
+                    <p>Small words, big meaning: I adore you more than you’ll ever know.</p>
+                </div>
+
+                <div class="info-box">
+                    <p>A tiny piece of my heart is yours, because you deserve all the love in the world.</p>
+                </div>
+
+                <div class="info-box">
+                    <p>You’re amazing, just the way you are!</p>
+                </div>
+
+                <div class="info-box">
+                    <p>You’re not just great—you’re one of a kind!</p>
+                </div>
+
+                <div class="info-box">
+                    <p>You’re simply the best, no one compares to you.</p>
+                </div>
+
+                <div class="info-box">
+                    <p>You’re the reason why everything feels so much better.</p>
+                </div>
+
+                <div class="info-box">
+                    <p>You’re a walking definition of amazing.</p>
+                </div>
+
+                <div class="info-box">
+                    <p>You have a way of making everyone around you feel special, and that’s something truly amazing. I’m so lucky to know someone as incredible as you.</p>
+                </div>
+
+                <div class="info-box">
+                    <p>You’re proof that kindness and greatness can go hand in hand.</p>
+                </div>
+
+                <div class="info-box">
+                    <p>You’re not just amazing for what you do, but for who you are. The way you care, the way you love, and the way you make everyone feel valued—it’s all just so beautiful.</p>
+                </div>
+
+                <div class="info-box">
+                    <p>You shine brighter than the stars."</p>
+                </div>
+
+
+                <div class="info-box">
+                    <p>You are the definition of extraordinary beauty.</p>
+                </div>
+
+
+                <div class="info-box">
+                    <p>You are amazing for making it to this point.</p>
+                </div>
+
+
+                <div class="info-box">
+                    <p>You are so beautiful in the way you face the world.</p>
+                </div>
+
+
+                <div class="info-box">
+                    <p>I’m proud of you for putting in all the effort.</p>
+                </div>
+
+                <div class="info-box">
+                    <p>You deserve all the love in this world.</p>
+                </div>
+
+                <div class="info-box">
+                    <p>You truly deserve endless happiness.</p>
+                </div>
+
+                <div class="info-box">
+                    <p>May your heart always be light, and may happiness follow you wherever you go.</p>
+                </div>
+
+                <div class="info-box">
+                    <p>You have worked so hard, and you deserve every bit of peace and joy this world brings."</p>
+                </div>
+
+                <div class="info-box">
+                    <p> hope you always find reasons to smile, because you are worthy of a million moments of joy.</p>
+                </div>
+
+                <div class="info-box">
+                    <p>Life is beautiful, and you deserve to live every moment in true happiness and love.</p>
+                </div>
+
+                <div class="info-box">
+                    <p>You are enough, enough for the world to know just how amazing you are..</p>
+                </div>
+
+                <div class="info-box">
+                    <p>Believe me, you are far more beautiful than the thoughts you have about yourself.</p>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+<div id="poemModal" class="modal">
+    <div class="modal-content">
+        <h3>Give you love.</h3>
+        <p>Giving you a sense of being loved is a way to remind you that you are valuable, more than words can express. No one can doubt how deserving you are of love and appreciation, because in every laugh, every happiness you bring, and every step you take, you have proven how special you are. I will not let anything make you feel less than what you truly deserve, because you deserve love that is full and unconditional. You have the right to feel valued, respected, and loved, now and forever.</p>
+        <button class="modal-close" onclick="closeModal('poemModal')">Close</button>
+    </div>
+</div>
+
+<div id="dateModal" class="modal">
+    <div class="modal-content">
+        <h3>Being all-rounder</h3>
+        <p>Be anything for you, whatever you need. I will always strive to give my best, provide support, and keep you strong, no matter what happens. If you need a place to rest, I am here. If you need someone to talk to, I am here. I will always be present, patiently and lovingly, ready to listen and provide whatever you need, whenever that may be. And if you need something sweet, I will do it for you, whatever it may be, because your happiness is the most important thing to me.</p>
+        <button class="modal-close" onclick="closeModal('dateModal')">Close</button>
+    </div>
+</div>
+
+<div id="playlistModal" class="modal">
+    <div class="modal-content">
+        <h3>Be a royal listener.</h3>
+        <p>I will be your attentive listener. I won’t let you think that you are alone, because I will always be here, with you. No matter what your story is, no matter how long it is, I will keep listening to you. Don’t worry about sharing, because every word that comes from your heart means something. I will always make space for your feelings, without judgment, only with understanding. So don’t let your mind carry it all by itself, because you don’t have to face it alone.</p>
+        <button class="modal-close" onclick="closeModal('playlistModal')">Close</button>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
